@@ -1,1 +1,2 @@
-# basic-wordle
+# Basic Wordle Clone
+This is a basic Wordle clone made using TypeScript (transpiled into JavaScript), HTML, and CSS. This is a cleaned-up version of the original project with better HTML and CSS. The original version was submitted as an academic requirement for the CS 150 (Programming Language) course of the Department of Computer Science in the University of the Philippines - Diliman during the first semester of AY 2022-2023.
