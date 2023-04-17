@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Wordle Game</title>
+        <link rel="stylesheet" href="style.css" />
+    </head>
+
+    <body onload="start()">
+        <h1>WORDLE</h1>
+
+        <div class="game-board">
+            <div class="game-board-row">
+                <div class="game-board-tile empty"></div>
+                <div class="game-board-tile empty"></div>
+                <div class="game-board-tile empty"></div>
+                <div class="game-board-tile empty"></div>
+                <div class="game-board-tile empty"></div>
+            </div>
+
+            <div class="game-board-row">
+                <div class="game-board-tile empty"></div>
+                <div class="game-board-tile empty"></div>
+                <div class="game-board-tile empty"></div>
+                <div class="game-board-tile empty"></div>
+                <div class="game-board-tile empty"></div>
+            </div>
+            
+            <div class="game-board-row">
+                <div class="game-board-tile empty"></div>
+                <div class="game-board-tile empty"></div>
+                <div class="game-board-tile empty"></div>
+                <div class="game-board-tile empty"></div>
+                <div class="game-board-tile empty"></div>
+            </div>
+
+            <div class="game-board-row">
+                <div class="game-board-tile empty"></div>
+                <div class="game-board-tile empty"></div>
+                <div class="game-board-tile empty"></div>
+                <div class="game-board-tile empty"></div>
+                <div class="game-board-tile empty"></div>
+            </div>
+
+            <div class="game-board-row">
+                <div class="game-board-tile empty"></div>
+                <div class="game-board-tile empty"></div>
+                <div class="game-board-tile empty"></div>
+                <div class="game-board-tile empty"></div>
+                <div class="game-board-tile empty"></div>
+            </div>
+
+            <div class="game-board-row">
+                <div class="game-board-tile empty"></div>
+                <div class="game-board-tile empty"></div>
+                <div class="game-board-tile empty"></div>
+                <div class="game-board-tile empty"></div>
+                <div class="game-board-tile empty"></div>
+            </div>
+        </div>
+
+        <div class="input-box">
+            <input type="input" id="guess" placeholder="Type your guess here" />
+        </div>
+
+        <div class="letter-board">
+            <div class="letter-board-row">
+                <div class="letter-board-tile" id="Q">Q</div>
+                <div class="letter-board-tile" id="W">W</div>
+                <div class="letter-board-tile" id="E">E</div>
+                <div class="letter-board-tile" id="R">R</div>
+                <div class="letter-board-tile" id="T">T</div>
+                <div class="letter-board-tile" id="Y">Y</div>
+                <div class="letter-board-tile" id="U">U</div>
+                <div class="letter-board-tile" id="I">I</div>
+                <div class="letter-board-tile" id="O">O</div>
+                <div class="letter-board-tile" id="P">P</div>
+            </div>
+
+            <div class="letter-board-row">
+                <div class="letter-board-tile" id="A">A</div>
+                <div class="letter-board-tile" id="S">S</div>
+                <div class="letter-board-tile" id="D">D</div>
+                <div class="letter-board-tile" id="F">F</div>
+                <div class="letter-board-tile" id="G">G</div>
+                <div class="letter-board-tile" id="H">H</div>
+                <div class="letter-board-tile" id="J">J</div>
+                <div class="letter-board-tile" id="K">K</div>
+                <div class="letter-board-tile" id="L">L</div>
+            </div>
+
+            <div class="letter-board-row">
+                <div class="letter-board-tile" id="Z">Z</div>
+                <div class="letter-board-tile" id="X">X</div>
+                <div class="letter-board-tile" id="C">C</div>
+                <div class="letter-board-tile" id="V">V</div>
+                <div class="letter-board-tile" id="B">B</div>
+                <div class="letter-board-tile" id="N">N</div>
+                <div class="letter-board-tile" id="M">M</div>
+            </div>
+        </div>
+
+        <script src="lab02_wordle.js"></script>
+    </body>
+</html>
