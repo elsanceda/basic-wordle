@@ -62,11 +62,9 @@ function wordle(event: KeyboardEvent, word: string, word_list: string[], guess_b
                 else if (word.includes(curr)) {
                     box.classList.add("misplaced");
 
-                    if (lbletter.classList.contains("correct")) {
-                        lbletter.classList.remove("correct");
+                    if (!lbletter.classList.contains("correct")) {
+                        lbletter.classList.add("misplaced");
                     }
-
-                    lbletter.classList.add("misplaced");
                 }
                 // Case: letter not in word
                 else {

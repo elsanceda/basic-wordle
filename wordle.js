@@ -52,10 +52,9 @@ function wordle(event, word, word_list, guess_box, count) {
                 // Case: letter in word but not in exact position
                 else if (word.includes(curr)) {
                     box.classList.add("misplaced");
-                    if (lbletter.classList.contains("correct")) {
-                        lbletter.classList.remove("correct");
+                    if (!lbletter.classList.contains("correct")) {
+                        lbletter.classList.add("misplaced");
                     }
-                    lbletter.classList.add("misplaced");
                 }
                 // Case: letter not in word
                 else {
