@@ -31,7 +31,7 @@ function wordle(event: KeyboardEvent, word: string, word_list: string[], guess_b
             alert('Your guess must be exactly 5 characters long');
         }
         // Case: guess is not in word list
-        else if (!word_list.includes(guess)) {
+        else if (!word_list.includes(guess.toLowerCase())) {
             alert('Invalid guess');
         }
         // Case: valid guess
